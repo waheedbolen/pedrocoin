@@ -48,6 +48,19 @@ body {
   bottom: -8rem;
 }
 
+@media (min-width: 1600px) {
+  .main-content-desc {
+    margin-top: 6rem !important;
+  }
+}
+@media (max-width: 1500px) {
+  /* .main-content-desc {
+    margin-top: 6rem !important;
+  } */
+  .marquee-wrapper {
+    bottom: 43.5rem;
+  }
+}
 @media (max-width: 768px) {
   .main-title {
     font-size: 45px;
