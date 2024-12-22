@@ -1,6 +1,6 @@
 export default function MainContent() {
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-12">
+    <div className="max-w-7xl mx-auto px-4 sm:mt-2 mt-12">
       <h1
         className="main-title text-[#440C0A] text-6xl md:text-7xl font-bold max-w-2xl leading-tight"
         style={{

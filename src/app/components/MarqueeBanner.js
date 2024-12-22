@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 export default function MainContent({ invert = false }) {
   return (
     <div
-      className=" mx-auto px-4 mt-12 height-[96px] "
+      className="m-wrapper mx-auto px-4 mt-12 height-[96px] "
       style={{
         width: "220rem",
         margin: "0",
