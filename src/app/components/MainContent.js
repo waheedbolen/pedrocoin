@@ -17,7 +17,7 @@ export default function MainContent() {
       </h1>
 
       <div className="main-content-desc mt-16 max-w-[30rem] sm:float-left lg:float-right">
-        <p className="text-[#440C0A] text-[20px] leading-relaxed hidden lg:block">
+        <p className="full-desc text-[#440C0A] text-[20px] leading-relaxed hidden lg:block">
           Hold tight! Pedrocoin is gearing up to redefine the world of meme
           coins with innovation, trust, and community at its core. We&apos;re
           hard at work crafting something extraordinary for you.
