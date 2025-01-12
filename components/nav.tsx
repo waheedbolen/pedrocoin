@@ -31,14 +31,14 @@ export function Nav() {
         <Image
           src={logo}
           alt="PedroCoin Logo"
-          width={100}
+          width={137}
           height={100}
           className="rounded-full"
         />
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center gap-8">
+      <div className="nav-links hidden md:flex items-center gap-10">
         {navItems.map((item) => (
           <Link
             key={item.name}
@@ -51,7 +51,7 @@ export function Nav() {
         ))}
         <Button
           variant="outline"
-          className="bg-white  hover:text-[#7F1911] rounded-[100px] border-[#7F1911] text-[#7F1911]"
+          className="bg-white white-paper-btn  hover:text-[#7F1911] rounded-[100px] border-[#7F1911] text-[#7F1911]"
         >
           WHITE PAPER
         </Button>

@@ -1,8 +1,9 @@
-import { Twitter, Send } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../public/pedro-logo.png";
 import solana from "../public/solana.png";
+import x from "../public/x.png";
+import t from "../public/t.png";
 import Marquee from "react-fast-marquee";
 import useIsMobile from "@/hooks/useIsMobile";
 
@@ -17,7 +18,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className=" relative bg-[#440C0A] overflow-hidden">
+    <footer className="footer-container pt-12 relative bg-[#440C0A] overflow-hidden">
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="text-center mb-0">
@@ -33,15 +34,29 @@ export default function Footer() {
           <div className="flex justify-center gap-4 mt-8">
             <Link
               href="#"
-              className="bg-white p-3 rounded-full hover:bg-white/90 transition-colors"
+              className=" p-3 rounded-full hover:bg-white/90 transition-colors"
             >
-              <Send className="w-6 h-6 text-[#8B1D1D]" />
+              {/* <Send className="w-6 h-6 text-[#8B1D1D]" /> */}
+              <Image
+                className="w-24 h-24"
+                width={20}
+                height={20}
+                src={t}
+                alt="solana"
+              />
             </Link>
             <Link
               href="#"
-              className="bg-white p-3 rounded-full hover:bg-white/90 transition-colors"
+              className=" p-3 rounded-full hover:bg-white/90 transition-colors"
             >
-              <Twitter className="w-6 h-6 text-[#8B1D1D]" />
+              {/* <Twitter className="w-6 h-6 text-[#8B1D1D]" /> */}
+              <Image
+                className="w-24 h-24"
+                width={20}
+                height={20}
+                src={x}
+                alt="solana"
+              />
             </Link>
           </div>
         </div>
@@ -49,7 +64,7 @@ export default function Footer() {
 
       {/* Background Text Overlay */}
       <div className="footer-marquee-text inset-0 overflow-hidden pointer-events-none mb-20">
-        <div className="footer-marquee-text-inner bottom-32 w-full text-[14vw] leading-none font-bold whitespace-nowrap">
+        <div className="footer-marquee-text-inner bottom-32 w-full text-[20vw] leading-none font-bold whitespace-nowrap">
           <Marquee gradient={false} speed={30} direction="right">
             {Array(4)
               .fill(null)
@@ -72,21 +87,21 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="w-[80%] mx-auto">
+      <div className="w-[90%] mx-auto">
         <div className="container mx-auto px-4 py-6 pb-0">
           <div className="border-b border-white/12 border-[#ffffff97] flex flex-col md:flex-row items-center justify-between gap-4 py-8">
             <div className="flex items-center gap-2">
               <Image
                 src={logo}
                 alt="Pedro Logo"
-                width={60}
-                height={60}
+                width={100}
+                height={100}
                 className="rounded-full"
               />
             </div>
 
             {/* Navigation */}
-            <nav className="flex gap-8">
+            <nav className="footer-links flex gap-8">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
