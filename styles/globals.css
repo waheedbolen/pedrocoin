@@ -179,6 +179,7 @@ h3,
 }
 .about-container {
   width: 90%;
+  max-width: 90rem;
 }
 .tale-of-perdro-wrapper {
   width: 55%;
@@ -315,6 +316,7 @@ h3,
 }
 .why-pedro-container {
   width: 90%;
+  max-width: 90rem;
 }
 .hov-white {
   color: #4a1d1d;
