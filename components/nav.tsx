@@ -49,12 +49,14 @@ export function Nav() {
             {item.name}
           </Link>
         ))}
-        <Button
-          variant="outline"
-          className="bg-white white-paper-btn  hover:text-[#7F1911] rounded-[100px] border-[#7F1911] text-[#7F1911]"
-        >
-          WHITE PAPER
-        </Button>
+        <a href="/PC_WP.pdf" download="PedroCoin_Whitepaper.pdf">
+          <Button
+            variant="outline"
+            className="bg-white white-paper-btn  hover:text-[#7F1911] rounded-[100px] border-[#7F1911] text-[#7F1911]"
+          >
+            WHITE PAPER
+          </Button>
+        </a>
       </div>
 
       {/* Mobile Navigation */}
@@ -80,12 +82,15 @@ export function Nav() {
                 {item.name}
               </button>
             ))}
-            <Button
-              variant="outline"
-              className="bg-white  hover:text-[#7F1911] rounded-[100px] border-[#7F1911] text-[#7F1911]"
-            >
-              WHITE PAPER
-            </Button>
+
+            <a href="/PC_WP.pdf" download="PedroCoin_Whitepaper.pdf">
+              <Button
+                variant="outline"
+                className="bg-white hover:text-[#7F1911] rounded-[100px] border-[#7F1911] text-[#7F1911]"
+              >
+                WHITE PAPER
+              </Button>
+            </a>
           </div>
         </SheetContent>
       </Sheet>

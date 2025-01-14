@@ -16,6 +16,7 @@ import Image from "next/image";
 import Footer from "@/components/footer";
 import MetricsInfo from "@/components/metrix-info";
 import useIsMobile from "@/hooks/useIsMobile";
+import Link from "next/link";
 
 export default function Home() {
   const isMobile = useIsMobile();
@@ -60,9 +61,11 @@ export default function Home() {
               variants={leftToRight}
               transition={{ duration: 1.2, ease: "easeOut" }}
             >
-              <Button className="join-btn bg-[#4A1D1D] text-[#D38A59] hover:bg-[#3A1515] px-8 py-6 text-lg rounded-[100px] border border-[#D38A59]">
-                JOIN THE COMMUNITY
-              </Button>
+              <Link href="https://x.com/pedro_coin61647?s=21" target="_blank">
+                <Button className="join-btn bg-[#4A1D1D] text-[#D38A59] hover:bg-[#3A1515] px-8 py-6 text-lg rounded-[100px] border border-[#D38A59]">
+                  JOIN THE COMMUNITY
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </div>

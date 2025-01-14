@@ -9,7 +9,11 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "PedroCoin - Building the Future of Memes & Tokens",
-  description: "Where humor and innovation unite on the Solana blockchain",
+  description:
+    "PedroCoin is community-powered token built on Solana to bring memes and utility together for the long haul. Join the trending meme coin revolution.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

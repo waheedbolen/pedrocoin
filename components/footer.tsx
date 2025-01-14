@@ -33,7 +33,8 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex justify-center gap-4 mt-8">
             <Link
-              href="#"
+              href="https://t.me/+CE_S7E5qupo3Yjc0"
+              target="_blank"
               className=" p-3 rounded-full hover:bg-white/90 transition-colors"
             >
               {/* <Send className="w-6 h-6 text-[#8B1D1D]" /> */}
@@ -46,7 +47,8 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href="#"
+              href="https://x.com/pedro_coin61647?s=21"
+              target="_blank"
               className=" p-3 rounded-full hover:bg-white/90 transition-colors"
             >
               {/* <Twitter className="w-6 h-6 text-[#8B1D1D]" /> */}
@@ -102,15 +104,33 @@ export default function Footer() {
 
             {/* Navigation */}
             <nav className="footer-links flex gap-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-white hover:text-white/80 transition-colors text-sm"
-                >
-                  {item.name}
-                </Link>
-              ))}
+              <Link
+                href="#about"
+                className="text-white hover:text-white/80 transition-colors text-sm"
+              >
+                About
+              </Link>
+              <Link
+                href="#tokenomics"
+                className="text-white hover:text-white/80 transition-colors text-sm"
+              >
+                Tokenomics
+              </Link>
+              <Link
+                href="#roadmap"
+                className="text-white hover:text-white/80 transition-colors text-sm"
+              >
+                Roadmap
+              </Link>
+
+              <a
+                className="text-white hover:text-white/80 transition-colors text-sm"
+                href="/PC_WP.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Whitepaper
+              </a>
             </nav>
           </div>
           {/* Copyright */}
