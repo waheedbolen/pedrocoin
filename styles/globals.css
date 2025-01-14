@@ -622,6 +622,33 @@ h3,
   .metrix-container {
     width: 92vw !important;
   }
+
+  .footer-container h2 {
+    font-size: 45px;
+  }
+  .footer-container p {
+    font-size: 18px;
+  }
+  .footer-img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .footer-links {
+    gap: 1rem;
+  }
+  .footer-links a {
+    font-size: 16px;
+  }
+  .footer-marquee-text-inner {
+    font-size: 10rem;
+  }
+  .footer-container-inner {
+    padding: 0;
+    padding-top: 1rem;
+  }
+  .roadmap-text {
+    width: 92vw;
+  }
 }
 @media (max-width: 500px) {
   .pedro-img-wrapper {

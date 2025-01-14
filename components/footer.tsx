@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="footer-container pt-12 relative bg-[#440C0A] overflow-hidden">
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="footer-container-inner container mx-auto px-4 py-16 relative z-10">
         <div className="text-center mb-0">
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
             Join the Pedro Party
@@ -38,7 +38,7 @@ export default function Footer() {
             >
               {/* <Send className="w-6 h-6 text-[#8B1D1D]" /> */}
               <Image
-                className="w-24 h-24"
+                className="footer-img w-24 h-24"
                 width={20}
                 height={20}
                 src={t}
@@ -51,7 +51,7 @@ export default function Footer() {
             >
               {/* <Twitter className="w-6 h-6 text-[#8B1D1D]" /> */}
               <Image
-                className="w-24 h-24"
+                className="footer-img w-24 h-24"
                 width={20}
                 height={20}
                 src={x}

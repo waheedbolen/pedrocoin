@@ -38,7 +38,7 @@ export default function Roadmap() {
     >
       <div className="w-full">
         {/* Header Text */}
-        <h4 className="font-light pt-24 text-[#8B1D1D] max-w-[700px] text-3xl md:text-5xl mx-auto mt-0 my-[10rem]">
+        <h4 className="roadmap-text font-light pt-24 text-[#8B1D1D] max-w-[700px] text-3xl md:text-5xl mx-auto mt-0 my-[10rem]">
           PedroCoin's roadmap is a four-phase journey to create a fun and
           functional ecosystem:
         </h4>
