@@ -1,10 +1,13 @@
 // components/MetricsInfo.tsx
+import useIsMobile from "@/hooks/useIsMobile";
+
 interface MetricsInfoProps {
   title: string;
   value: string;
   description: string;
   titleColor?: string; // Optional prop for text color
   desktop?: boolean;
+  lastChild?: boolean;
   percentage?: number;
 }
 
@@ -15,9 +18,14 @@ const MetricsInfo = ({
   titleColor = "inherit",
   desktop = false,
   percentage,
+  lastChild,
 }: MetricsInfoProps) => {
+  const isMobile = useIsMobile();
+
+  const lastCh = !isMobile && lastChild;
+
   return (
-    <div className="w-64">
+    <div className="matrix-text-wrapper w-64">
       <div className="text-6xl font-bold text-white mb-4">{percentage}</div>
       <div
         className="text-xl font-medium mb-0"
@@ -32,7 +40,7 @@ const MetricsInfo = ({
         {value}
       </div>
       <div
-        className="text-sm opacity-90 mb-4"
+        className="matrix-last-text text-sm opacity-90 mb-4"
         style={{ color: desktop ? "#fff" : titleColor }}
       >
         {description}

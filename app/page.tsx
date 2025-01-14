@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
         <WhyPedro />
-        <div id="tokenomics" className="pedronomics-container">
+        <div className="pedronomics-container">
           <div className="pedronomics-wrapper">
             <Pedronomics />
             <div
@@ -162,6 +162,7 @@ export default function Home() {
               <div>
                 {isMobile && (
                   <motion.div
+                    className="matrix-wrapper"
                     initial="hidden"
                     animate={barsControls}
                     variants={rightToLeft}
@@ -196,6 +197,7 @@ export default function Home() {
               <div>
                 {isMobile && (
                   <motion.div
+                    className="matrix-wrapper"
                     initial="hidden"
                     animate={barsControls}
                     variants={rightToLeft}
@@ -230,6 +232,7 @@ export default function Home() {
               <div>
                 {isMobile && (
                   <motion.div
+                    className="matrix-wrapper"
                     initial="hidden"
                     animate={barsControls}
                     variants={rightToLeft}
@@ -264,6 +267,7 @@ export default function Home() {
               <div>
                 {isMobile && (
                   <motion.div
+                    className="matrix-wrapper"
                     initial="hidden"
                     animate={barsControls}
                     variants={rightToLeft}
@@ -285,12 +289,13 @@ export default function Home() {
                   variants={fadeUp}
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
                 >
-                  <VerticalMetrics percentage={5}>
+                  <VerticalMetrics lastChild={true} percentage={5}>
                     <MetricsInfo
                       title="Marketing & Partnerships"
                       value="50,000,000 coins"
                       description="Meme campaigns and strategic collaborations"
-                      titleColor="#41CE84"
+                      titleColor="#fff"
+                      lastChild={true}
                     />
                   </VerticalMetrics>
                 </motion.div>

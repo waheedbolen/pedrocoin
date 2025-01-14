@@ -13,6 +13,7 @@ export default function Pedronomics() {
       className="w-[100%] min-h-[400px] bg-gradient-to-br  flex items-center"
     >
       <div
+        id="tokenomics"
         className="w-[90%] container mx-auto md:px-6 lg:px-0"
         style={
           {
